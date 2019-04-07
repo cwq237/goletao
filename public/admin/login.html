@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
     <link rel="stylesheet" href="./css/common.css">
 </head>
 
@@ -14,17 +16,19 @@
     <!-- 1. 首先使用bootstrap框架最外层有外层容器,container(响应式) 或者 container-fluid(宽度100%) -->
 
     <div class="container">
-        <div class="col-lg-4 col-lg-offset-4 mt_150">
-            <div class="panel panel-primary">
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="panel panel-primary  mt_150">
                 <div class="panel-heading">
                     <h3 class="panel-title text-center">后台管理系统</h3>
                 </div>
                 <div class="panel-body">
                     <form class="form-horizontal" id="form">
+                        <!-- form表单中有一个类: form-group -->
                         <div class="form-group">
                             <label for="username" class="col-sm-3 control-label">用户名:</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
+                                <!-- autocomplete: 关闭默认提示 -->
+                                <input type="text" autocomplete="off" class="form-control" id="username" name="username" placeholder="请输入用户名">
                             </div>
                         </div>
                         <div class="form-group">
@@ -47,6 +51,10 @@
 
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
+    <script src="./lib/nprogress/nprogress.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
